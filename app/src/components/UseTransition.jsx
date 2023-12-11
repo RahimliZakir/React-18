@@ -1,3 +1,7 @@
+//* useDeferredValue() does the same thing as useTransition(), making a slow and laggy interface faster. However, it is used in a slightly different way. According to React team member Dan Abramov, useDeferredValue() is mainly
+
+//* useful when the value comes “from above” and you don’t actually have control over the corresponding setState call.
+
 import React, { useState, useTransition } from "react";
 
 const UseTransition = () => {
