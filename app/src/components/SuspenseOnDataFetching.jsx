@@ -31,6 +31,7 @@ export default SuspenseOnDataFetching;
 const countryResource = fetchData(process.env.REACT_APP_COUNTRIES_API_URL);
 
 const CountryList = () => {
+  console.log(countryResource)
   const countries = countryResource.read();
 
   return (
