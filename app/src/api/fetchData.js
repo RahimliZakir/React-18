@@ -2,8 +2,7 @@ import { wrapPromise } from "./wrapPromise";
 
 export const fetchData = (url) => {
   const promise = fetch(url)
-    .then((resp) => resp.json())
-    .then((resp) => resp);
+    .then((resp) => resp.json());
 
   return wrapPromise(promise);
 };
